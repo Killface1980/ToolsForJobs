@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tools For Jobs</name>
+	<author>Wivex</author>
+	<targetVersion>0.15.1280</targetVersion>
+	<description>
+	We shape our tools and afterwards our tools shape us. (Marshall McLuhan)
+
+	This mod adds the following to the game:
+	• Mining Tool (Pickaxe)
+	• Plant Cutting/Harvesting Tool (Handaxe)
+	• Constructing Tool (Hammer)
+
+	Tools are used with the corresponding jobs.
+	All can be constructed at the 'Tool Bench' for appropriate costs.
+	</description>
+</ModMetaData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Modified stock file -->
+
+    <MapGeneratorDef>
+        <defName>MainMapGenerator</defName>
+    </MapGeneratorDef>
+
+
+  <GenStepDef>
+    <defName>Tools</defName>
+    <mapGenerator>MainMapGenerator</mapGenerator>
+    <order>1000</order>
+    <genStep Class="ToolsForJobs.Genstep_ToolsDropPod"/>
+  </GenStepDef>          
+
+</Defs>

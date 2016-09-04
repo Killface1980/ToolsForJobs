@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F29E8F77-F9D1-4087-BB23-5295807867A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToolsForJobs</RootNamespace>
+    <AssemblyName>ToolsForJobs</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WorkGiver_WorkWithTools_Scanner.cs" />
+    <None Include="WorkGiver_WorkWithTools_RemoveRoof.cs" />
+    <Compile Include="Genstep_ToolsDropPod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGiver_WorkWithTools_BuildRoof.cs" />
+    <Compile Include="WorkGiver_WorkWithTools.cs" />
+    <Compile Include="WorkGiver_WorkWithTools_ConstructDeliverResourcesToBlueprints.cs" />
+    <Compile Include="WorkGiver_WorkWithTools_ConstructFinishFrames.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkGiver_WorkWithTools_HunterHunt.cs" />
+    <Compile Include="WorkGiver_WorkWithTools_Mine.cs" />
+    <Compile Include="WorkGiver_WorkWithTools_PlantsCut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkGiver_WorkWithTools_Repair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Defs\EffecterDefs\Effecters_Construction.xml">
+      <Link>EffecterDefs\Effecters_Construction.xml</Link>
+    </Content>
+    <Content Include="..\Defs\EffecterDefs\Effecters_WorkGeneral.xml">
+      <Link>EffecterDefs\Effecters_WorkGeneral.xml</Link>
+    </Content>
+    <Content Include="..\Defs\MapGeneratorDefs\MapGenerators.xml">
+      <Link>MapGenerators\MapGenerators.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_Tools.xml">
+      <Link>RecipeDefs\Recipes_Tools.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThingDefs\Bench.xml">
+      <Link>RhingDefs\Bench.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThingDefs\Tools.xml">
+      <Link>RhingDefs\Tools.xml</Link>
+    </Content>
+    <Content Include="..\Defs\WorkGiverDefs\WorkGivers.xml">
+      <Link>WorkGiverDefs\WorkGivers.xml</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

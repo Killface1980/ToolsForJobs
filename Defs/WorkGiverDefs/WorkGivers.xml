@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>PlantsCut</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_PlantsCut</giverClass>
+    <workType>PlantCutting</workType>
+    <verb>cut</verb>
+    <gerund>cutting</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>ConstructDeliverResourcesToBlueprints</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_ConstructDeliverResourcesToBlueprints</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>500</priorityInType>
+    <verb>work on</verb>
+    <gerund>working on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>ConstructDeliverResourcesToFrames</defName>
+    <giverClass>WorkGiver_ConstructDeliverResourcesToFrames</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>400</priorityInType>
+    <verb>work on</verb>
+    <gerund>working on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>Mine</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_Mine</giverClass>
+    <workType>Mining</workType>
+    <verb>mine</verb>
+    <gerund>mining</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>ConstructFinishFrames</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_ConstructFinishFrames</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>100</priorityInType>
+    <verb>construct</verb>
+    <gerund>constructing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>Repair</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_Repair</giverClass>
+    <workType>Repair</workType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>HunterHunt</defName>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_HunterHunt</giverClass>
+    <workType>Hunting</workType>
+    <verb>hunt</verb>
+    <gerund>hunting</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsMaketool</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <label>make tool</label>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <verb>tool make</verb>
+    <gerund>tool making</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <fixedBillGiverDefs>
+      <li>TFJToolBench</li>
+    </fixedBillGiverDefs>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>BuildRoofs</defName>
+    <label>build roofs</label>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_BuildRoof</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>8</priorityInType>
+    <verb>build roof</verb>
+    <gerund>building roof</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+<!--
+  <WorkGiverDef>
+    <defName>RemoveRoofs</defName>
+    <label>remove roofs</label>
+    <giverClass>ToolsForJobs.WorkGiver_WorkWithTools_RemoveRoof</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>7</priorityInType>
+    <verb>remove roof</verb>
+    <gerund>removing roof</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  -->
+</WorkGivers>
